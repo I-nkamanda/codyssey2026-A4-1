@@ -1,0 +1,550 @@
+{
+  "documents": 1200,
+  "train": 960,
+  "test": 240,
+  "features": 33,
+  "max_error": 1.1102230246251565e-16,
+  "mean_error": 2.3553689862707314e-18,
+  "accuracy": 0.6333333333333333,
+  "macro_f1": 0.6333333333333333,
+  "confusion_matrix": [
+    [
+      76,
+      44
+    ],
+    [
+      44,
+      76
+    ]
+  ],
+  "misclassified": [
+    {
+      "id": "review-0161",
+      "text": "끝까지 봤는데 전개 별로였다 또한 영상 인상적이었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0775",
+      "text": "기대하고 봤는데 연기 만족스러웠다 하지만 액션 아쉬웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0426",
+      "text": "다시 봤는데 음악 인상적이었다 그리고 결말 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0323",
+      "text": "끝까지 봤는데 스토리 인상적이었다 하지만 결말 실망스러웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0175",
+      "text": "끝까지 봤는데 대사 좋았다 반면 음악 실망스러웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0779",
+      "text": "처음 봤는데 영상 좋았다 또한 전개 지루했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1128",
+      "text": "기대하고 봤는데 연출 어색했다 반면 영상 만족스러웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0922",
+      "text": "다시 봤는데 결말 어색했다 하지만 영상 재미있었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0911",
+      "text": "처음 봤는데 대사 인상적이었다 반면 음악 마음에 들지 않았다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0234",
+      "text": "극장에서 봤는데 음악 재미있었다 그리고 전개 지루했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0024",
+      "text": "다시 봤는데 인물 마음에 들지 않았다 반면 영상 좋았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0466",
+      "text": "주말에 봤는데 결말 아쉬웠다 하지만 연기 만족스러웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0252",
+      "text": "처음 봤는데 영상 훌륭했다 하지만 전개 아쉬웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0882",
+      "text": "다시 봤는데 연출 재미있었다 그리고 스토리 아쉬웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0340",
+      "text": "처음 봤는데 인물 인상적이었다 또한 전개 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0502",
+      "text": "주말에 봤는데 연기 아쉬웠다 반면 영상 만족스러웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0654",
+      "text": "다시 봤는데 대사 지루했다 하지만 영상 좋았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0483",
+      "text": "기대하고 봤는데 인물 재미있었다 하지만 결말 어색했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0364",
+      "text": "주말에 봤는데 인물 실망스러웠다 그리고 전개 좋았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0969",
+      "text": "끝까지 봤는데 대사 아쉬웠다 반면 영상 인상적이었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0521",
+      "text": "끝까지 봤는데 결말 아쉬웠다 또한 영상 마음에 들었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0953",
+      "text": "처음 봤는데 결말 어색했다 반면 연출 좋았다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0696",
+      "text": "주말에 봤는데 대사 마음에 들지 않았다 반면 연기 마음에 들었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0992",
+      "text": "처음 봤는데 연출 재미있었다 반면 연기 별로였다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0661",
+      "text": "극장에서 봤는데 연기 어색했다 반면 스토리 훌륭했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0453",
+      "text": "처음 봤는데 스토리 별로였다 또한 대사 재미있었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1124",
+      "text": "끝까지 봤는데 영상 훌륭했다 또한 연기 실망스러웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0518",
+      "text": "다시 봤는데 액션 재미있었다 그리고 연출 별로였다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1121",
+      "text": "기대하고 봤는데 대사 마음에 들었다 반면 액션 마음에 들지 않았다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0434",
+      "text": "기대하고 봤는데 연기 훌륭했다 하지만 전개 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1095",
+      "text": "끝까지 봤는데 결말 어색했다 그리고 연출 인상적이었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1067",
+      "text": "끝까지 봤는데 스토리 아쉬웠다 그리고 대사 마음에 들었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0379",
+      "text": "끝까지 봤는데 결말 재미있었다 그리고 연기 어색했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0160",
+      "text": "처음 봤는데 결말 만족스러웠다 그리고 전개 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1100",
+      "text": "끝까지 봤는데 인물 마음에 들었다 또한 영상 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0454",
+      "text": "끝까지 봤는데 음악 훌륭했다 또한 연출 별로였다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0058",
+      "text": "주말에 봤는데 대사 만족스러웠다 반면 전개 실망스러웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0016",
+      "text": "극장에서 봤는데 액션 마음에 들지 않았다 그리고 결말 마음에 들었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0539",
+      "text": "기대하고 봤는데 스토리 좋았다 하지만 전개 아쉬웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0183",
+      "text": "처음 봤는데 스토리 인상적이었다 그리고 영상 지루했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0949",
+      "text": "극장에서 봤는데 대사 실망스러웠다 반면 음악 인상적이었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0406",
+      "text": "다시 봤는데 연출 마음에 들었다 하지만 스토리 실망스러웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0388",
+      "text": "주말에 봤는데 영상 지루했다 그리고 대사 마음에 들었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0837",
+      "text": "극장에서 봤는데 스토리 지루했다 반면 결말 훌륭했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1022",
+      "text": "극장에서 봤는데 대사 재미있었다 하지만 연출 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0383",
+      "text": "처음 봤는데 대사 인상적이었다 반면 연출 지루했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0433",
+      "text": "기대하고 봤는데 액션 실망스러웠다 반면 전개 좋았다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0292",
+      "text": "처음 봤는데 영상 훌륭했다 그리고 인물 실망스러웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0130",
+      "text": "극장에서 봤는데 액션 재미있었다 하지만 음악 아쉬웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0952",
+      "text": "주말에 봤는데 연기 좋았다 그리고 액션 아쉬웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0722",
+      "text": "극장에서 봤는데 인물 마음에 들었다 또한 영상 어색했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1058",
+      "text": "다시 봤는데 스토리 지루했다 그리고 전개 재미있었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1002",
+      "text": "주말에 봤는데 결말 어색했다 하지만 전개 훌륭했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0871",
+      "text": "끝까지 봤는데 결말 인상적이었다 또한 대사 어색했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0746",
+      "text": "극장에서 봤는데 결말 지루했다 그리고 전개 마음에 들었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1171",
+      "text": "끝까지 봤는데 대사 좋았다 하지만 음악 실망스러웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1195",
+      "text": "처음 봤는데 영상 별로였다 반면 대사 마음에 들었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1112",
+      "text": "주말에 봤는데 연출 인상적이었다 그리고 전개 아쉬웠다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1038",
+      "text": "주말에 봤는데 전개 아쉬웠다 하지만 음악 마음에 들었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0257",
+      "text": "처음 봤는데 인물 어색했다 또한 영상 훌륭했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0679",
+      "text": "극장에서 봤는데 대사 마음에 들었다 반면 전개 아쉬웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0897",
+      "text": "처음 봤는데 음악 만족스러웠다 반면 대사 마음에 들지 않았다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0951",
+      "text": "주말에 봤는데 결말 지루했다 반면 연기 인상적이었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1021",
+      "text": "극장에서 봤는데 결말 인상적이었다 하지만 스토리 별로였다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1127",
+      "text": "기대하고 봤는데 대사 아쉬웠다 하지만 영상 만족스러웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0480",
+      "text": "주말에 봤는데 스토리 실망스러웠다 하지만 대사 훌륭했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0997",
+      "text": "극장에서 봤는데 인물 마음에 들었다 또한 액션 별로였다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0348",
+      "text": "극장에서 봤는데 연기 별로였다 그리고 연출 훌륭했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-1011",
+      "text": "기대하고 봤는데 인물 훌륭했다 하지만 액션 별로였다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0591",
+      "text": "기대하고 봤는데 영상 훌륭했다 반면 스토리 별로였다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1062",
+      "text": "주말에 봤는데 결말 훌륭했다 그리고 음악 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0783",
+      "text": "기대하고 봤는데 액션 실망스러웠다 하지만 전개 마음에 들었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0065",
+      "text": "기대하고 봤는데 음악 좋았다 반면 영상 어색했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1194",
+      "text": "극장에서 봤는데 전개 훌륭했다 반면 스토리 지루했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0684",
+      "text": "극장에서 봤는데 스토리 재미있었다 반면 연출 어색했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0440",
+      "text": "다시 봤는데 인물 마음에 들었다 반면 결말 마음에 들지 않았다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0092",
+      "text": "주말에 봤는데 영상 실망스러웠다 또한 대사 훌륭했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0745",
+      "text": "주말에 봤는데 결말 아쉬웠다 하지만 전개 인상적이었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0985",
+      "text": "끝까지 봤는데 음악 좋았다 그리고 대사 어색했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1125",
+      "text": "끝까지 봤는데 결말 별로였다 반면 연출 훌륭했다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0094",
+      "text": "극장에서 봤는데 대사 만족스러웠다 반면 인물 어색했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0029",
+      "text": "기대하고 봤는데 연출 인상적이었다 또한 결말 아쉬웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0125",
+      "text": "극장에서 봤는데 액션 지루했다 또한 연기 마음에 들었다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0343",
+      "text": "처음 봤는데 인물 마음에 들었다 또한 액션 마음에 들지 않았다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-0356",
+      "text": "다시 봤는데 전개 별로였다 그리고 액션 재미있었다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0002",
+      "text": "다시 봤는데 인물 좋았다 그리고 결말 지루했다",
+      "actual": 1,
+      "predicted": 0
+    },
+    {
+      "id": "review-0733",
+      "text": "처음 봤는데 인물 인상적이었다 반면 결말 실망스러웠다",
+      "actual": 0,
+      "predicted": 1
+    },
+    {
+      "id": "review-1009",
+      "text": "처음 봤는데 연기 별로였다 반면 영상 재미있었다",
+      "actual": 0,
+      "predicted": 1
+    }
+  ]
+}
