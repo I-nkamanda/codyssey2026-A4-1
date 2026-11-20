@@ -20,7 +20,7 @@ NumPy만을 사용하여 TF-IDF 벡터화와 코사인 유사도 기반 문서 �
 
 ### 1.2 데이터셋 구성 및 타 데이터 적용 규격
 * **Iteration 1 (합성 더미 데이터)**: `generate_data.py`로 생성한 1,200건(긍정 600 / 부정 600, 어휘 33개)으로 파이프라인 정상 동작을 우선 검증했습니다. (결과 백업: `results/iter1/`)
-* **Iteration 2 (실제 NSMC 데이터셋)**: `prepare_nsmc.py`를 통해 공개 [NSMC(네이버 영화 리뷰)](https://github.com/e9t/nsmc) `ratings_test.txt`에서 결측치(빈 문장, 토큰 2개 미만)와 개인정보 패턴(이메일, 전화번호 형식)을 필터링한 뒤, 고정 시드(`42`)로 **긍정 1,000건 / 부정 1,000건 총 2,000건**을 균형 샘플링하여 `data/reviews.csv`를 구성했습니다. (결과 백업: `results/iter2/`, 최신 기본 결과: `results/`)
+* **Iteration 2 (실제 NSMC 데이터셋)**: `prepare_nsmc.py`를 통해 공개 [NSMC(네이버 영화 리뷰)](https://github.com/e9t/nsmc)(라이선스: CC0 1.0 Public Domain) `ratings_test.txt`에서 결측치(빈 문장, 토큰 2개 미만)와 개인정보 패턴(이메일, 전화번호 형식)을 필터링한 뒤, 고정 시드(`42`)로 **긍정 1,000건 / 부정 1,000건 총 2,000건**을 균형 샘플링하여 `data/reviews.csv`를 구성했습니다. (결과 백업: `results/iter2/`, 최신 기본 결과: `results/`)
 * **다른 CSV 데이터셋 적용 조건**:
   * **필수 컬럼**: `id`(고유 식별자), `text`(문서 본문), `label`(정수형 클래스 라벨, 최소 2개 이상 카테고리)
   * **인코딩 및 규모**: UTF-8 인코딩, 최소 500건 이상(계층화 분할 및 어휘 확보 목적)
