@@ -35,18 +35,19 @@ class Tfidf: #TF-IDF를 위한 새로운 클래스를 정의합니다. Tfidf 클
                     matrix[i, self.vocabulary[word]] = count # 행렬의 [문서 인덱스, 단어 인덱스]위치에 출현 횟수를 기록한다.
         return matrix #완성된 단어 출현 횟수 행렬을 반환한다.
 
-    def transform(self, documents: list[str]) -> np.ndarray: #documents를 벡터로 변환한다. L2 normalizations이란: 벡터의 방향은 유지하면서 길이를 1로 만드는 작업.
+    def transform(self, documents: list[str]) -> np.ndarray: #documents를 TF X IDF -> L2 정규화 -> 2차원 문서 벡터로 변환한다. 
+        #L2 normalizations이란: 벡터의 방향은 유지하면서 길이를 1로 만드는 작업.
         #주의: 원소들의 제곱 합의 제곱근을 1로 만든다는 것이다. (피타고라스 정리!)
         """Transform documents into L2-normalized TF-IDF vectors."""
         matrix = self._counts([tokenize(d) for d in documents]) * self.idf #문서를 토큰화한 뒤에, 문서별 단어 출현 횟수 행렬을 만들어 주고, 각 단어의 IDF 값을 곱해서 TF-IDF 행렬을 만든다.
-        norms = np.linalg.norm(matrix, axis=1, keepdims=True) #각 문서(행)마다 벡터의 길이(L2 Norm)를 계산해 준다. 
+        norms = np.linalg.norm(matrix, axis=1, keepdims=True) #NumPy 선형대수 모듈에서 각 문서(행)마다 벡터의 길이(L2 Norm)를 계산해 준다. 
         #np.linalg.norm = NumPy.Linear_Algebra_normalization (벡터의 길이를 계산해주며, 기본 설정으로 L2 Norm을 사용함.) axis=1 :각 행을 따라 계산해줌. (문서별로 벡터의 길이를 구해줌) keepdims=True: dimension(2차원 배열)의 형태를 유지한다.
         return np.divide(matrix, norms, out=np.zeros_like(matrix), where=norms != 0) #np.divide() = 원소별 나눗셈.
         # np.divide(나눠질 행렬, 각 문서 벡터의 길이, 계산결과를 저장할 배열 = matrix와 같은 dimension의 0행렬, 길이가 0인 벡터는 나누지 않고 0으로 남긴다-오류 방지용)
 # 그럼 정규화를 왜 할까요? -> 문서 A가 문서 B의 몇 배가 길어서 단어가 더 많이 등장했다고 할지라도, 그것만으로 검색어와 의미상 더 관련있다고 볼 수는 없다. 정규화를 통해 벡터의 길이 차이를 제거하면 이제 단어 가중치의 "상대적인 분포와 방향"을 중심으로 비교할 수 있다.
 # 또한, 코사인 유사도의 경우도 두 벡터 사이의 각도를 이용하는데, 정규화가 되어서 길이가 1이다? 이러면 내적만 써도 코사인 유사도를 계산할 수 있게 되는 것이다.
 
-def cosine(query: np.ndarray, matrix: np.ndarray) -> np.ndarray: #검색어 벡터와 문서 벡터의 코사인 유사도를 계산해서, 각 문서의 유사도 점수를 ndarray로 반환해 준다.
+def cosine(query: np.ndarray, matrix: np.ndarray) -> np.ndarray: #검색어 벡터와 문서 벡터의 코사인 유사도를 계산해서, 각 문서의 유사도 점수를 1차원 ndarray로 반환해 준다.
     """Compute cosine similarity between a query vector and each row of matrix."""
     denominator = np.linalg.norm(matrix, axis=1) * np.linalg.norm(query) #denominator를 정해주는데, 각 문서 벡터의 L2 길이와 검색어 벡터의 L2 길이를 원소별 곱셈을 진행해 줘서 코사인 유사도 공식의 분모를 계산한다.
     #* 는 원소곱, @ 는 내적 기호이다. 
